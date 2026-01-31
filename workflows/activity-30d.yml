@@ -1,0 +1,94 @@
+name: Update 30d Activity Badge
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compute 30-day activity (GraphQL)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: chabodmasere
+        run: |
+          set -euo pipefail
+
+          FROM=$(date -u -d "30 days ago" +"%Y-%m-%dT%H:%M:%SZ")
+          TO=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+          QUERY=$(cat <<'EOF'
+          query($login:String!, $from:DateTime!, $to:DateTime!) {
+            user(login:$login) {
+              contributionsCollection(from:$from, to:$to) {
+                totalCommitContributions
+                totalPullRequestContributions
+                totalIssueContributions
+                totalPullRequestReviewContributions
+              }
+            }
+          }
+          EOF
+          )
+
+          DATA=$(gh api graphql \
+            -f query="$QUERY" \
+            -f login="$USERNAME" \
+            -f from="$FROM" \
+            -f to="$TO")
+
+          COMMITS=$(echo "$DATA" | jq -r '.data.user.contributionsCollection.totalCommitContributions')
+          PRS=$(echo "$DATA" | jq -r '.data.user.contributionsCollection.totalPullRequestContributions')
+          ISSUES=$(echo "$DATA" | jq -r '.data.user.contributionsCollection.totalIssueContributions')
+          REVIEWS=$(echo "$DATA" | jq -r '.data.user.contributionsCollection.totalPullRequestReviewContributions')
+
+          SCORE=$(( COMMITS*1 + PRS*4 + ISSUES*2 + REVIEWS*2 ))
+
+          if   [ "$SCORE" -ge 220 ]; then GRADE="A+"; COLOR="brightgreen";
+          elif [ "$SCORE" -ge 140 ]; then GRADE="A";  COLOR="brightgreen";
+          elif [ "$SCORE" -ge 90  ]; then GRADE="B";  COLOR="green";
+          elif [ "$SCORE" -ge 50  ]; then GRADE="C";  COLOR="yellowgreen";
+          elif [ "$SCORE" -ge 25  ]; then GRADE="D";  COLOR="orange";
+          else                             GRADE="E";  COLOR="red";
+          fi
+
+          mkdir -p badges
+
+          cat > badges/30d-activity.json <<EOF
+          {
+            "schemaVersion": 1,
+            "label": "30d activity",
+            "message": "${GRADE}",
+            "color": "${COLOR}"
+          }
+          EOF
+
+          awk -v commits="$COMMITS" -v prs="$PRS" -v issues="$ISSUES" -v reviews="$REVIEWS" -v score="$SCORE" '
+            BEGIN{inblock=0}
+            /<!-- ACTIVITY_30D:START -->/{print;
+              print "- Commits (30d): **" commits "**";
+              print "- PRs opened (30d): **" prs "**";
+              print "- Issues opened (30d): **" issues "**";
+              print "- PR reviews (30d): **" reviews "**";
+              print "- Activity score (30d): **" score "**";
+              inblock=1; next}
+            /<!-- ACTIVITY_30D:END -->/{inblock=0; print; next}
+            inblock==0{print}
+          ' README.md > README.tmp && mv README.tmp README.md
+
+      - name: Commit & push
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add badges/30d-activity.json README.md
+          git commit -m "chore: update 30d activity badge" || exit 0
+          git push
