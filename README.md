@@ -1,4 +1,4 @@
-# 💫 Hi, I'm Chabod:
+# 💫 Hi, I'm Chabod.
 # I’m an Electrical & Aerospace Engineer | Master’s Student in Robotics & AI I build full-stack engineering systems across robotics, aerospace, and AI, turning complex ideas into working machines with real-world impact.
 
 
