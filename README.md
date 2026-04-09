@@ -7,7 +7,7 @@
 
 
 ## 🧠 My Focus Areas
-- AI/ML Research and Robotics
+- AI/ML Research and Robotic Systems
 
 
 ## 📊 GitHub Stats & Trophies
