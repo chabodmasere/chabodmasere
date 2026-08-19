@@ -13,7 +13,7 @@
 ## 📊 GitHub Stats & Trophies
 <p align="center">
   <a href="https://github.com/cha6z">
-    <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=cha6z&cache_seconds=7200&layout=compact&theme=tokyonight&border_radius=10" alt="cha6z's GitHub Stats" />
+    <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=chabodmasere&cache_seconds=7200&layout=compact&theme=tokyonight&border_radius=10" alt="chabod's GitHub Stats" />
   </a>
   <img src="https://streak-stats.demolab.com/?user=cha6z&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="cha6z's GitHub Streak" width="49%" />
 </p>
