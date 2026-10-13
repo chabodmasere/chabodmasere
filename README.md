@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://chabod.dev">Website</a> ·
   <a href="https://www.linkedin.com/in/chabodmasere/">LinkedIn</a> ·
-  <a href="https://x.com/chabodmasere">X</a> ·
+  <a href="https://x.com/cha6od">X</a> ·
   <a href="mailto:chabodmasere@outlook.com">Email</a>
 </p>
 
