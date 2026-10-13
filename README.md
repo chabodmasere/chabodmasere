@@ -18,15 +18,6 @@ what the maths says it should, and the hardware it runs on.
 - 🔧 I work across control theory, state estimation, embedded systems, computer vision and machine learning
 - 🎯 Current focus: robotics and AI research for autonomous systems
 
-## 🚀 Selected work
-
-| Project | What it is |
-| --- | --- |
-| [Modern control: vectored-thrust VTOL](https://github.com/chabodmasere/EGH445-Modern-Control) | Discrete-time LQG controller for a planar VTOL aircraft: LQR, Kalman observer and reference prefilter, validated on the nonlinear plant. Marked 39.1 / 40. |
-| [Honours research: slot-array antenna](https://github.com/chabodmasere/EGH490-Research-Project) | Truncated-waveguide 6 × 6 slot array designed to suppress second-order lobes, from a 483-case CST sweep to a printed prototype. Reached a −23.2 dB sidelobe level at 9 GHz. |
-| [Uncrewed aircraft systems](https://github.com/chabodmasere/EGH450-Advanced-Uncrewed-Aircraft-Systems) | Airframe, power and propulsion work for a quadrotor: CAD, structural analysis, 3D-printed enclosures and motor bench testing. |
-| [C++ notes](https://github.com/chabodmasere/Cpp-Programming-Course) · [Rust notes](https://github.com/chabodmasere/Rust-Programming) | Personal learning notes for systems programming, written in LaTeX. |
-
 ## 🛠️ Languages and tools
 
 **Languages**
