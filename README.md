@@ -1,4 +1,7 @@
-<img src="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:000000,100:a371f7&text=Chabod%20Masere&fontSize=60&fontColor=FFFFFF&animation=fadeIn&fontAlignY=40&desc=Robotics%20%C2%B7%20Control%20%C2%B7%20Aerospace&descSize=22&descColor=FFFFFF&descAlignY=65" width="100%" alt="Chabod Masere: Robotics, Control, Aerospace"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:000000,100:a371f7&text=Chabod%20Masere&fontSize=60&fontColor=FFFFFF&animation=fadeIn&fontAlignY=40&desc=Robotics%20%C2%B7%20Control%20%C2%B7%20Aerospace&descSize=22&descColor=FFFFFF&descAlignY=65" />
+  <img src="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:ffffff,100:a371f7&text=Chabod%20Masere&fontSize=60&fontColor=1F2328&animation=fadeIn&fontAlignY=40&desc=Robotics%20%C2%B7%20Control%20%C2%B7%20Aerospace&descSize=22&descColor=1F2328&descAlignY=65" width="100%" alt="Chabod Masere: Robotics, Control, Aerospace" />
+</picture>
 
 <p align="center">
   <a href="https://chabod.dev">Website</a> ·
@@ -62,10 +65,16 @@ MATLAB and Simulink · CST Studio Suite · ANSYS Workbench · Fusion 360 · 3D p
 
 <p align="center">
   <a href="https://github.com/chabodmasere">
-    <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=chabodmasere&cache_seconds=7200&layout=compact&theme=tokyonight&border_radius=10" alt="Chabod's GitHub stats" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=chabodmasere&cache_seconds=7200&layout=compact&theme=tokyonight&border_radius=10" />
+      <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=chabodmasere&cache_seconds=7200&layout=compact&theme=default&border_radius=10" alt="Chabod's GitHub stats" />
+    </picture>
   </a>
   <a href="https://github.com/chabodmasere">
-    <img height="165" src="https://streak-stats.demolab.com/?user=chabodmasere&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="Chabod's GitHub streak" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=chabodmasere&theme=tokyonight&hide_border=true&cache_seconds=86400" />
+      <img height="165" src="https://streak-stats.demolab.com/?user=chabodmasere&theme=default&hide_border=true&cache_seconds=86400" alt="Chabod's GitHub streak" />
+    </picture>
   </a>
 </p>
 
