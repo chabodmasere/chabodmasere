@@ -8,12 +8,12 @@
 
 ## 📌 About me
 
-I'm an electrical and aerospace engineer and Chief Engineer at General Axis. I build
-autonomous systems: the control, estimation and planning that make a robot or aircraft do
-what the maths says it should, and the hardware it runs on.
+I'm an electrical and aerospace engineer and Chief Engineer at a startup building autonomous
+vehicles. I build autonomous systems: the control, estimation and planning that make a robot
+or aircraft do what the maths says it should, and the hardware it runs on.
 
-- 🎓 Master of Robotics and Artificial Intelligence, QUT
-- 🎓 Bachelor of Engineering (Electrical & Aerospace), QUT
+- 🎓 SM, Robotics & Artificial Intelligence, QUT (Queensland University of Technology)
+- 🎓 BE, Electrical & Aerospace, QUT (Queensland University of Technology)
 - 🔧 I work across control theory, state estimation, embedded systems, computer vision and machine learning
 - 🎯 Current focus: robotics and AI research for autonomous systems
 
