@@ -1,7 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:000000,100:a371f7&text=Chabod%20Masere&fontSize=60&fontColor=FFFFFF&animation=fadeIn&fontAlignY=40&desc=Robotics%20%C2%B7%20Control%20%C2%B7%20Aerospace&descSize=22&descColor=FFFFFF&descAlignY=65" />
-  <img src="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:ffffff,100:a371f7&text=Chabod%20Masere&fontSize=60&fontColor=1F2328&animation=fadeIn&fontAlignY=40&desc=Robotics%20%C2%B7%20Control%20%C2%B7%20Aerospace&descSize=22&descColor=1F2328&descAlignY=65" width="100%" alt="Chabod Masere: Robotics, Control, Aerospace" />
-</picture>
+<img src="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:000000,100:a371f7&text=Chabod%20Masere&fontSize=60&fontColor=FFFFFF&animation=fadeIn&fontAlignY=40&desc=Robotics%20%C2%B7%20Control%20%C2%B7%20Aerospace&descSize=22&descColor=FFFFFF&descAlignY=65" width="100%" alt="Chabod Masere: Robotics, Control, Aerospace"/>
 
 <p align="center">
   <a href="https://chabod.dev">Website</a> ·
@@ -35,7 +32,10 @@ what the maths says it should, and the hardware it runs on.
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="40" height="40" />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" title="Java" width="40" height="40" />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" title="C#" width="40" height="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/latex/latex-original.svg" alt="LaTeX" title="LaTeX" width="40" height="40" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/latex/white" />
+    <img src="https://cdn.simpleicons.org/latex/black" alt="LaTeX" title="LaTeX" width="40" height="40" />
+  </picture>
 </p>
 
 **Engineering**
@@ -63,7 +63,10 @@ MATLAB and Simulink · CST Studio Suite · ANSYS Workbench · Fusion 360 · 3D p
 
 <p>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" width="40" height="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" width="40" height="40" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/mysql/white" />
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" width="40" height="40" />
+  </picture>
   <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS" title="AWS" width="40" height="40" />
   <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="Google Cloud" title="Google Cloud" width="40" height="40" />
   <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes" title="Kubernetes" width="40" height="40" />
